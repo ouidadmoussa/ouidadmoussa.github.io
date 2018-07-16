@@ -1,0 +1,301 @@
+
+
+
+body {
+    font-size: 100%;
+
+    line-height: 1.6em;
+}
+
+
+
+     /*============================loader Code ========================*/
+
+
+
+body::before {
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -o-transition: .8s;
+    content: "";
+    display: block;
+    position: fixed;
+    top: -5px;
+    width: 200%;
+    height: 110%;
+    background-color: #2fc989;
+    z-index: 5000;
+    opacity: 1;
+    left: -20%;
+    overflow: hidden;
+    transform: skew(-15deg, 0);
+    -moz-transform: skew(-15deg, 0);
+    -webkit-transform: skew(-15deg, 0);
+    -o-transform: skew(-15deg, 0);
+    -ms-transform: skew(-15deg, 0)
+}
+
+.loaded::before {
+    transition: .9s;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -o-transition: .9s;
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    -ms-transition-delay: .2s;
+    transition-delay: .2s;
+    opacity: 1;
+    left: -220%
+}
+
+
+
+.loaded main .wrapper {
+    opacity: 1;
+    min-height: 100%;
+    height: auto;
+    flex-grow: 1;
+}
+
+#loader {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+
+
+    opacity: 1;
+    z-index: 5001
+}
+
+
+#loader:before {
+    transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    -webkit-transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    -moz-transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    -o-transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    content: "";
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #fff;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite
+}
+
+#loader:after {
+    transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    -webkit-transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    -moz-transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    -o-transition: all 350ms cubic-bezier(.215, .61, .215, 1);
+    content: "";
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    right: 60px;
+    bottom: 60px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #fff;
+    -webkit-animation: spin .75s linear infinite;
+    animation: spin .75s linear infinite
+}
+.loaded #loader {
+    opacity: 0;
+    top: -250px
+}
+
+.no-js #loader-wrapper {
+    display: none;
+}
+#loader {
+    width: 215px;
+    height: 215px
+}
+
+    @-webkit-keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        0%   { 
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+
+            /*=================================landing page=================================== */
+     .page-wrap {
+         top: 50%;
+         left: 50%;
+         position: absolute;
+         transform: translate(-50%,-50%);
+         -webkit-transform: translate(-50%,-50%);
+         max-width: 1100px;
+         width: 100%;
+         padding: 90px;
+         margin: 0;
+     }
+
+     .page-wrap h1 {
+
+         font-family:Montserrat, sans-serif;
+         display: block;
+         color:rgb(37, 38, 39);
+         font-size: 95.6px;
+         letter-spacing: -.025em;
+         margin-top: .5em;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 96.6px;
+         text-transform: uppercase;
+         word-wrap: break-word !important;
+         text-align: center;
+         padding: 22.5px 30px 0
+     }
+
+      .page-wrap h1 span{
+          color: #2fc989 !important;
+       }
+
+
+
+      /*========================================responsive media query ===============================*/
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    .desc {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .page-wrap {
+        padding: 15px
+    }
+    .nav-link {
+
+
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 10px;
+        margin: 0rem .9rem;
+        padding: 0rem;
+
+    }
+
+    .nav-link:hover span {
+
+        letter-spacing: 2px;
+
+    }
+    #content ul{
+        width: 97%;
+        margin-left: 2px;
+        margin-bottom: 0px;
+        border-bottom:  1px solid #E1E1E1;
+    }
+
+
+    .panel h1 {
+
+        font-family:Montserrat, sans-serif;
+        display: block;
+        color:rgb(37, 38, 39);
+        font-size: 34.6px;
+        letter-spacing: -0.95px;
+        margin-top: .1em;
+        font-style: normal;
+        font-weight: 700;
+        line-height:34px;
+        text-transform: uppercase;
+        word-wrap: break-word !important;
+        text-align: center;
+    }
+    .desc {
+        width: 95%;
+
+    }
+    .skilled{
+        margin-top: 20px;
+        width: 100%;
+        border-top: 1px solid rgba(49,49,49,0.1);
+    }
+    .skilled h2 {font-size: 20px;}
+
+    .contactContainer{
+        padding: 25px 0px;
+    }
+    .emailCenter{
+        margin-bottom: 0px;
+    }
+
+    .contactContainer .ctaButton{
+        margin-bottom: 20px;
+    }
+
+    .workList {
+        padding: 3em 2.5em;
+
+
+    }
+    .workList h1{
+      font-size: 1.5em;
+    }
+
+    .projectTitle{
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        align-items: center !important;
+    }
+    .lakiussa{
+        background-color:#454B57;
+    }
+
+    .wmeb{
+       background-color:  #1fa67a;
+    }
+    .chatSystem{
+      background-color: #CA2A38;
+    }
+
+
+}

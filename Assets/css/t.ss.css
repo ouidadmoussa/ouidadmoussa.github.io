@@ -1,0 +1,42 @@
+.wrapper.page-title,
+.wrapper.page-title .m-page {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+
+.loaded main.wrapper {
+    opacity: 1;
+    min-height: 100%;
+    height: auto
+}
+
+
+body .et-wrapper {
+    background: url(../images/bg-pattern.png) #3e4041;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.15em
+}
+
+body .et-wrapper h1 {
+    margin: 0;
+    font-size: 5.25em
+}
+
+body .et-wrapper h1 span {
+    font-family: Montserrat, sans-serif, sans-serif;
+    font-style: normal;
+    display: inline-block;
+    font-size: 1em;
+    letter-spacing: 0;
+    margin: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    text-transform: uppercase
+}
+.et-page .page-wrap {
+    padding: 22.5px 30px 0
+}
