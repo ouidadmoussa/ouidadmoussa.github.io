@@ -1,0 +1,75 @@
+
+/*------------------------------------  footer styling ----------------------------------*/
+
+.footerContainer{
+    background-color: #252525;
+
+}
+.footer-left, .footer-right{
+
+
+    padding:  20px ;
+
+}
+.footer-left h3,.footer-right h3{
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-left p{
+    width: 70%;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    margin: 10px 0 10px 10px;
+}
+
+.footer-right form{
+    width: 70%;
+
+}
+.footer-right form input, .footer-right form textarea , .footer-right form button{
+    margin: 10px 0 10px 10px;
+    border-radius: 0;
+}
+.footer-right form button{
+    background-color: #E72435;
+    border-color: #E72435;
+    text-transform: uppercase;
+}
+.footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal !important;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.footer-icons{
+    margin-top: 10px;
+
+}
+.fb-container{
+    border-radius: 50%;
+    background-color: #3B5998;
+
+}
+
+.footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+

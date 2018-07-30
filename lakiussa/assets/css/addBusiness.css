@@ -1,0 +1,92 @@
+body{
+    background-color: #f5f5f5 ;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #333;
+}
+
+.headerNav{
+    background-color: #333;
+    border: none !important;
+    border-radius:0% ;
+    color: #fff;
+}
+.headerNav a {
+    color: #fff;
+}
+.headerNav a:hover{
+    color: #b2b2b2;
+    font-weight: bold;
+}
+.headerNav ul li :hover{
+    background-color: #333 !important;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+.listing{
+    background-color: #fff ;
+    border: 3px solid #e5e5e5;
+    min-height: 250px;
+    /*margin-left: 35px;*/
+    margin-bottom: 55px;
+}
+
+.listingHeader{
+    padding: 40px 25px 5px 25px;
+    font-weight: 400
+}
+
+.form{
+    margin: 20px 20px 20px 20px;
+    border-radius: 0%;
+}
+
+.form-group label{
+    color: #474747;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+.form-group input{
+
+}
+.addButton{
+    border: none;
+    background-color: #E72435;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 0%;
+
+}
+
+.signLink{
+    color: #333;
+    text-decoration: none;
+}
+.signLink:hover{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+.newLegend{
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+    font-size: 14px !important;
+}
+    /*____________________________________________________media query______________________________________*/
+
+
+@media only screen and (max-width : 480px) {
+    .listingHeader {
+        padding: 40px 0px 5px 25px;
+        font-weight: 400
+    }
+
+    .listing {
+        margin-left: 0px;
+
+    }
+
+}
