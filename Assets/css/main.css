@@ -272,12 +272,14 @@ body::before {
     }
 
     .workList {
-        padding: 3em 2.5em;
+        padding: 2em 2.5em;
+        margin-top: 35px;
 
 
     }
     .workList h1{
       font-size: 1.5em;
+
     }
 
     .projectTitle{

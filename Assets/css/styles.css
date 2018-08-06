@@ -213,9 +213,16 @@ color:rgb(26, 205, 104); !important;
 
 }
 
+.hrefButton {
 
-.ctaButton {
+    margin-bottom: 40px;
     display: inline-block;
+    position: relative;
+    margin-top: 40px;
+}
+.ctaButton {
+
+    display: inline-block !important;
     background: 0 0;
     padding: 10px 25px;
     position: relative;
@@ -232,7 +239,7 @@ color:rgb(26, 205, 104); !important;
     text-transform: uppercase;
     letter-spacing: .4em;
     border: 4px solid rgb(26, 205, 104);
-    margin-bottom: 40px;
+
 }
 
 
@@ -247,16 +254,16 @@ color:rgb(26, 205, 104); !important;
     right: 0;
     bottom: 0;
     height: 100%;
-    background: #ffffff; /* onhover background color */
+    background: #ffffff;
 
 
     z-index: -1;
-    transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+    transform: translate3D(0,-100%,0);
     transition: all .5s;
 }
 
 .ctaButton:after {
-    background:rgb(26, 205, 104);; /* button default background color */
+    background:rgb(26, 205, 104);
 
     z-index: -2;
     transform: translate(0,0);
@@ -273,6 +280,7 @@ color:rgb(26, 205, 104); !important;
     transform: translate(100%,0);
     transition: all .7s;
 }
+
 
 
 
@@ -348,14 +356,15 @@ color:rgb(26, 205, 104); !important;
 }
 
 .footer{
-    height: 350px;
+
     width: 100%;
     background-color: rgb(33, 37, 41);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:flex-end;
-    padding-top: 40px;
+
+
 }
 
 .footer p {
