@@ -230,10 +230,12 @@ body::before {
         width: 97%;
         margin-left: 2px;
         margin-bottom: 0px;
-        border-bottom:  1px solid #E1E1E1;
+
     }
+  nav{
+      border-bottom:  1px solid #E1E1E1;
 
-
+    }
     .panel h1 {
 
         font-family:Montserrat, sans-serif;
