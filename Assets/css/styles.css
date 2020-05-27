@@ -718,3 +718,8 @@ a:hover, .link:hover {
     line-height: 24px;
     line-height: 2.4rem;
 }
+
+.nohref{
+    color:  rgb(33, 37, 41);  ;
+;
+}
